@@ -1,0 +1,10 @@
+﻿version: '2'
+services:
+    webserver:
+        image: 'nginx:latest'
+        volumes:
+            - 'web-data:/usr/share/nginx/html'
+        ports:
+            - '80:80'
+volumes:
+    web-data: null
